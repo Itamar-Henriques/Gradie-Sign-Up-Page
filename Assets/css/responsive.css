@@ -1,0 +1,83 @@
+/* Tablet */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        background-position: 50%;
+    }
+
+    .container {
+        height: 1000px;
+        width: 450px;
+        flex-direction: column;
+    }
+
+    .title-box,
+    .sign-box {
+        height: 50%;
+        width: 100%;
+    }
+
+    .title-box {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .title-box img {
+        width: 450px;
+    }
+
+    .sign-box {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/* Mobal */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        flex-direction: column;
+    }
+
+    .title-box,
+    .sign-box {
+        height: 100%;
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+    .title-box {
+        height: max-content;
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        position:absolute;
+        top: 50px;
+    }
+    
+    .title-box img {
+        height: 100%;
+        width: 100%;
+        position: static;
+        }
+
+    .sign-box {
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    #sign-button {
+        height: 50px;
+    }
+}

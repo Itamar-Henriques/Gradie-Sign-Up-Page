@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url(https://fonts.google.com/specimen/Roboto);
+@import url(components/checkbox.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 500px;
+    width: 800px;
+    border: 0.5px solid #b8b6b6;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.title-box,
+.sign-box {
+        height: 100%;
+        width: 50%;
+    }
+
+/* title-box */
+
+.title-box {
+    border-radius: 10px 0 0 10px;
+    background-color: #013243;
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.title-box h1 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.title-box p {
+    color: #4d8599;
+    font-size: 1em;
+}
+
+.title-box img {
+    height: 499px;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* sign-box */
+
+.sign-box {
+    border-radius: 0 10px 10px 0;
+    background-color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+input[type=email],
+input[type=password] {
+    height: 50px;
+    width: 100%;
+    border: 2px solid #D6D6D6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 12px;
+}
+
+/* Link Terms */
+
+.checkbox-btn a {
+    color: #013243;
+    font-weight: bold;
+}
+
+/* Button */
+
+#sign-button {
+    height: 50px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: #013243;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sign-button:hover {
+    background-color: #04475e;
+}
+
+.success-message {
+    color: #013243;
+    text-align: center;
+}
