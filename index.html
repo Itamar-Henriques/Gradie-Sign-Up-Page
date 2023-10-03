@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradie Sign Up Page</title>
+    <link rel="shortcut icon" href="Assets/img/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title-box">
+            <header class="title">
+                <h1>Gradie</h1>
+                <p>Beautiful gradients in seconds.</p>
+            </header>
+            <img src="Assets/img/iPhone_Mockup.png" alt="">
+        </div>
+
+        <div class="sign-box">
+            <h1>Login</h1>
+            <form action="sign" id="sign-form">
+                <label for="email" class="bold">Email</label>
+                <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                <div id="email-error" class="error"></div>
+
+                <label for="password" class="bold">Password</label>
+                <input type="password" name="password" id="password" placeholder="At least 8 characters" required>
+                <div id="password-error" class="error"></div>
+
+                <label class="checkbox-btn">
+                    <label for="checkbox"></label>
+                    <input id="checkbox" type="checkbox" required>
+                    <span class="checkmark"></span>By creating an account, you agree to the <a href="#">Terms & Conditions.</a>
+                </label>
+
+                <button type="submit" id="sign-button">Create an Account</button>
+            </form>
+            <div id="success-message" class="success-message"></div>
+        </div>
+    </div>
+
+    <script src="Assets/js/script.js"></script>
+
+</body>
+
+</html>
