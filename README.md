@@ -18,7 +18,7 @@ Senha: 12345678
 
 ## Links
 Projeto <br>
-<a target="_blank" rel="noreferrer" href="https://portifolio-itamar-henriques.netlify.app/"> gradie-sign-up-page.netlify.app </a> 
+<a target="_blank" rel="noreferrer" href="https://gradie-sign-up-page-project.netlify.app"> gradie-sign-up-page-project.netlify.app </a> 
 <img width="20" height="20" src="https://www.gstatic.com/images/icons/material/system_gm/1x/launch_gm_grey_18dp.png" alt="link--v1"/>
 <br> <br>
 Site citado <br>
