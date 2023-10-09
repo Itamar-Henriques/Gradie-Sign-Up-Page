@@ -1,5 +1,5 @@
 document.getElementById('sign-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Impede o envio do formulário padrão
+    event.preventDefault(); // Prevent the default form from being sent
     
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
@@ -7,25 +7,25 @@ document.getElementById('sign-form').addEventListener('submit', function (event)
     var passwordError = document.getElementById('password-error');
     var successMessage = document.getElementById('success-message');
     
-    // Validar o formato do email
+    // Validate the email format
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailPattern.test(email)) {
-        emailError.textContent = 'Formato de e-mail inválido!';
-        successMessage.textContent = ''; // Limpa a mensagem de sucesso
+        emailError.textContent = 'Invalid email format!';
+        successMessage.textContent = ''; // Clears the success message
         return;
     } else {
         emailError.textContent = '';
     }
 
-    // Validar a senha (mínimo 8 caracteres)
+    // Validate password (minimum 8 characters)
     if (password.length < 8) {
-        passwordError.textContent = 'A senha deve ter pelo menos 8 caracteres!';
-        successMessage.textContent = ''; // Limpa a mensagem de sucesso
+        passwordError.textContent = 'The password must be at least 8 characters long!';
+        successMessage.textContent = ''; // Clears the success message
         return;
     } else {
         passwordError.textContent = '';
     }
 
-    // Exibir a mensagem de sucesso
-    successMessage.textContent = 'Cadastro bem sucedido!';
+    // Display the “registration successful” message
+    successMessage.textContent = 'Successful registration!';
 });
