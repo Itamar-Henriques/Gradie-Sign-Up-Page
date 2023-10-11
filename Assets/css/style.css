@@ -128,7 +128,7 @@ input[type=password] {
     background-color: #04475e;
 }
 
-.success-message {
+#success-message {
     color: #013243;
     text-align: center;
 }
