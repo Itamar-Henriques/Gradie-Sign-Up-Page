@@ -1,5 +1,5 @@
 document.getElementById('sign-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form from being sent
+    event.preventDefault(); // Prevent the default form being sent
     
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
